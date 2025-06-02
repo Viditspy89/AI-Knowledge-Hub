@@ -1,157 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>AI Knowledge Hub | Explore AI Trends, Learn, and Innovate</title>
-<meta name="description" content="Stay updated with the latest AI trends, technologies, and resources. Learn about AI agents, deep learning, and more at AI Knowledge Hub." />
-<meta name="keywords" content="Artificial Intelligence, AI Trends, Deep Learning, AI Agents, Machine Learning, AI News, AI Resources" />
-<meta name="author" content="AI Knowledge Hub" />
-<link rel="canonical" href="https://YOUR_SITE_URL" />
-<meta property="og:title" content="AI Knowledge Hub" />
-<meta name="google-adsense-account" content="ca-pub-7174826662025584">
-<meta property="og:description" content="Explore the latest in AI technologies, trends, and learning resources." />
-<meta property="og:url" content="https://YOUR_SITE_URL" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://YOUR_SITE_URL/preview.png" />
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-<style>
-body {
-font-family: 'Segoe UI', sans-serif;
-background-color: #f8f9fa;
-}
-header {
-background: linear-gradient(90deg, #0d6efd, #6610f2);
-color: white;
-padding: 60px 20px;
-text-align: center;
-}
-section {
-padding: 40px 20px;
-background-color: #fff;
-margin-bottom: 20px;
-border-radius: 8px;
-box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-footer {
-background-color: #343a40;
-color: white;
-padding: 20px;
-text-align: center;
-}
-h2 {
-color: #0d6efd;
-margin-bottom: 20px;
-}
-.search-bar {
-max-width: 500px;
-margin: 20px auto;
-}
-.news-item {
-margin-bottom: 15px;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Knowledge Hub | Explore AI Trends, Learn, and Innovate</title>
+  <meta name="description" content="Stay updated with the latest AI trends, technologies, and resources. Learn about AI agents, deep learning, and more at AI Knowledge Hub." />
+  <meta name="keywords" content="Artificial Intelligence, AI Trends, Deep Learning, AI Agents, Machine Learning, AI News, AI Resources" />
+  <meta name="author" content="AI Knowledge Hub" />
+  <link rel="canonical" href="https://YOUR_SITE_URL" />
+  <meta property="og:title" content="AI Knowledge Hub" />
+  <meta property="og:description" content="Explore the latest in AI technologies, trends, and learning resources." />
+  <meta property="og:url" content="https://YOUR_SITE_URL" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://YOUR_SITE_URL/preview.png" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    header {
+      background: url('https://cdn.pixabay.com/photo/2021/04/08/10/19/artificial-intelligence-6164166_1280.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .section-heading {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-bar {
+      max-width: 600px;
+      margin: 40px auto 20px;
+    }
+
+    section {
+      padding: 40px 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+      margin-bottom: 30px;
+    }
+
+    .news-item {
+      border-left: 4px solid #0d6efd;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .ai-icon {
+      color: #6610f2;
+    }
+  </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" role="navigation">
-<div class="container">
-<a class="navbar-brand" href="#">AI Knowledge Hub</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-<ul class="navbar-nav">
-<li class="nav-item"><a class="nav-link" href="#latest-news">News</a></li>
-<li class="nav-item"><a class="nav-link" href="#technologies">Technologies</a></li>
-<li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
-<li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
-</ul>
-</div>
-</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><i class="fas fa-robot me-2"></i>AI Knowledge Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#latest-news">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="#technologies">Technologies</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<header role="banner">
-<h1>Welcome to AI Knowledge Hub</h1>
-<p>Your gateway to the latest in Artificial Intelligence</p>
+<header>
+  <h1><i class="fas fa-brain ai-icon"></i> Welcome to AI Knowledge Hub</h1>
+  <p class="lead">Your gateway to the latest in Artificial Intelligence</p>
 </header>
 
 <div class="container search-bar">
-<input type="search" class="form-control" id="searchInput" placeholder="Search AI topics..." aria-label="Search AI topics">
+  <input type="search" class="form-control form-control-lg" id="searchInput" placeholder="🔍 Search AI topics..." aria-label="Search AI topics">
 </div>
 
-<main class="container" role="main">
+<main class="container">
 
-<section id="latest-news">
-<h2>📰 Latest AI News</h2>
-<div class="news-item">
-<h5><a href="https://www.thetimes.co.uk/article/sam-altman-jony-ive-ai-device-t532ld78n" target="_blank">Sam Altman and Jony Ive Collaborate on AI Device to Reduce Screen Time</a></h5>
-<p>OpenAI's Sam Altman and Apple's Jony Ive are developing a compact AI device aimed at minimizing screen dependency. <a href="https://www.thetimes.co.uk/article/sam-altman-jony-ive-ai-device-t532ld78n" target="_blank">Read more</a></p>
-</div>
-<div class="news-item">
-<h5><a href="https://www.ft.com/content/339a7e8c-d7ba-499c-b02d-40a514d6bd8a" target="_blank">Early AI Adoption Boosts US Economic Growth</a></h5>
-<p>The US leads in AI integration, enhancing productivity but raising concerns over job displacement. <a href="https://www.ft.com/content/339a7e8c-d7ba-499c-b02d-40a514d6bd8a" target="_blank">Read more</a></p>
-</div>
-<div class="news-item">
-<h5><a href="https://www.businessinsider.com/ai-tech-amusement-parks-lines-disney-seaworld-legoland-busch-gardens-2025-5" target="_blank">AI Revolutionizes Amusement Park Experiences</a></h5>
-<p>Amusement parks employ AI to reduce wait times and enhance visitor engagement. <a href="https://www.businessinsider.com/ai-tech-amusement-parks-lines-disney-seaworld-legoland-busch-gardens-2025-5" target="_blank">Read more</a></p>
-</div>
-</section>
+  <section id="latest-news">
+    <h2 class="section-heading"><i class="fas fa-newspaper"></i> Latest AI News</h2>
+    <div class="news-item">
+      <h5><a href="https://www.thetimes.co.uk/article/sam-altman-jony-ive-ai-device-t532ld78n" target="_blank">Sam Altman and Jony Ive Collaborate on AI Device</a></h5>
+      <p>OpenAI's Sam Altman and Apple's Jony Ive are developing a compact AI device to reduce screen dependency. <a href="#" target="_blank">Read more</a></p>
+    </div>
+    <div class="news-item">
+      <h5><a href="https://www.ft.com/content/339a7e8c-d7ba-499c-b02d-40a514d6bd8a" target="_blank">Early AI Adoption Boosts US Economy</a></h5>
+      <p>AI integration enhances productivity but raises concerns over job displacement. <a href="#" target="_blank">Read more</a></p>
+    </div>
+    <div class="news-item">
+      <h5><a href="https://www.businessinsider.com/ai-tech-amusement-parks-lines-disney-seaworld-legoland-busch-gardens-2025-5" target="_blank">AI in Amusement Parks</a></h5>
+      <p>AI shortens wait times and enhances visitor experience. <a href="#" target="_blank">Read more</a></p>
+    </div>
+  </section>
 
-<section id="technologies">
-<h2>🔧 AI Technologies & Trends</h2>
-<ul>
-<li><strong>AI Agents:</strong> Autonomous systems capable of complex tasks and decision-making.</li>
-<li><strong>Multimodal AI:</strong> Integration of text, image, and audio data for comprehensive understanding.</li>
-<li><strong>Living Intelligence:</strong> Fusion of AI with biotechnology and advanced sensors for adaptive systems.</li>
-<li><strong>Vibe Coding:</strong> AI-assisted coding through natural language prompts, simplifying software development.</li>
-<li><strong>Human-Centered AI:</strong> Designing AI systems that prioritize human values and collaboration.</li>
-</ul>
-</section>
+  <section id="technologies">
+    <h2 class="section-heading"><i class="fas fa-microchip"></i> AI Technologies & Trends</h2>
+    <ul>
+      <li><strong>AI Agents:</strong> Autonomous systems for complex decision-making.</li>
+      <li><strong>Multimodal AI:</strong> Integration of text, image, and audio data.</li>
+      <li><strong>Living Intelligence:</strong> Fusion of AI and biotech sensors.</li>
+      <li><strong>Vibe Coding:</strong> Natural language AI-assisted software development.</li>
+      <li><strong>Human-Centered AI:</strong> AI that respects human values.</li>
+    </ul>
+  </section>
 
-<section id="resources">
-<h2>📚 Learning Resources</h2>
-<ul>
-<li><a href="https://www.deeplearning.ai" target="_blank">DeepLearning.AI</a> – Courses on deep learning and AI.</li>
-<li><a href="https://fast.ai" target="_blank">Fast.ai</a> – Practical deep learning for coders.</li>
-<li><a href="https://www.kaggle.com/learn" target="_blank">Kaggle Learn</a> – Hands-on data science and machine learning tutorials.</li>
-<li><a href="https://www.coursera.org" target="_blank">Coursera AI Courses</a> – Comprehensive AI and machine learning courses.</li>
-</ul>
-</section>
+  <section id="resources">
+    <h2 class="section-heading"><i class="fas fa-book-open"></i> Learning Resources</h2>
+    <ul>
+      <li><a href="https://www.deeplearning.ai" target="_blank">DeepLearning.AI</a> – Deep learning education from experts.</li>
+      <li><a href="https://fast.ai" target="_blank">Fast.ai</a> – Hands-on coding and models.</li>
+      <li><a href="https://www.kaggle.com/learn" target="_blank">Kaggle Learn</a> – Interactive ML and DS tutorials.</li>
+      <li><a href="https://www.coursera.org" target="_blank">Coursera</a> – AI courses from top institutions.</li>
+    </ul>
+  </section>
 
-<section id="community">
-<h2>🤝 Join the AI Community</h2>
-<p>Connect with AI enthusiasts and professionals:</p>
-<ul>
-<li><a href="https://www.reddit.com/r/MachineLearning/" target="_blank">Reddit: r/MachineLearning</a></li>
-<li><a href="https://ai.stackexchange.com/" target="_blank">AI Stack Exchange</a></li>
-<li><a href="https://www.linkedin.com/groups/AI-Professionals-Group-123456/" target="_blank">LinkedIn: AI Professionals Group</a></li>
-</ul>
-</section>
-
-</main>
-
-<footer role="contentinfo">
-<p>&copy; 2025 AI Knowledge Hub — Empowering AI Enthusiasts Worldwide</p>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Search Script -->
-<script>
-const searchInput = document.getElementById('searchInput');
-const sections = document.querySelectorAll('section');
-
-searchInput.addEventListener('input', () => {
-const query = searchInput.value.toLowerCase();
-sections.forEach(section => {
-const text = section.textContent.toLowerCase();
-section.style.display = text.includes(query) ? 'block' : 'none';
-});
-});
-</script>
-</body>
-</html>
+  <section id="community">
+    <h2 class="section-heading"><i class="fas fa-users"></i> Join the AI Community</h2>
+    <p>Connect with AI enthusiasts and professionals around the globe:</p>
+    <ul>
+      <li><a href="https://www.reddit.com/r/MachineLearning/" target="_blank">Reddit: r/MachineLearning</a></li>
+      <li><a href="https://ai.stackexchange.com/" target="_blank">AI Stack Exchange</a></li>
+     
